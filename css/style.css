@@ -1,0 +1,77 @@
+body {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  #result {
+    margin: 15px 0;
+    font-weight: bold;
+    color: #055;
+    font-size: 1.3em;
+  }
+  
+  #controls {
+    display: none;
+  }
+  
+  #modal-results .content table {
+    width: 100%;
+  }
+  #modal-results .content table td {
+    background-color: #eee;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .overlay.show {
+    display: block;
+  }
+  
+  .modal {
+    padding: 5px;
+    display: none;
+    width: 100%;
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    background: #fff;
+    border-radius: 5px;
+  }
+  .modal.show {
+    display: block;
+  }
+  .modal .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    color: #000;
+    text-decoration: none;
+  }
+  .modal header {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 30px;
+    font-weight: bold;
+    padding: 0 30px;
+  }
+  .modal .content {
+    min-height: 30px;
+    padding: 5px 30px;
+  }
+  

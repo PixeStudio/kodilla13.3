@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+
+#result {
+    margin: 15px 0;
+    
+    font-weight: bold;
+    color: #055;
+    font-size: 1.3em;
+}
+
+#controls {
+  display: none;
+}

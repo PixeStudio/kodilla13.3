@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+		<meta charset="UTF-8" />
+		<title>Gra (rozbudowa) - 13.3</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+  	</head>
+  	<body>
+  	  	<button id="newGame" onclick="newGame()">New Game</button>
+  	  	<p id="controls">
+			<button id="paper" data-move="paper" class="player-move">paper</button>
+			<button id="rock" data-move="rock" class="player-move">rock</button>
+			<button id="scissors" data-move="scissors" class="player-move">scissors</button>
+  	  	</p>
+		
+  	  	<div id="result">(Results will be here!)</div>
+		<a href="#modal-results" class="show-modal">Show results</a>
+		
+  	  	<div id="output">Click the button above to start!</div>
+		
+		<div class="overlay" id="modal-overlay">
+			<div class="modal" id="modal-end">
+				<a href="#" class="close">x</a>
+				<header>Game ended!</header>
+				<div class="content">
+					Brak otrzymanej wiadomości.
+				</div>
+			</div>
+			<div class="modal" id="modal-results">
+				<a href="#" class="close">x</a>
+				<header>Game results</header>
+				<div class="content">
+					Brak wyników - nie trwa ani nie była grana żadna rozgrywka...
+				</div>
+			</div>
+		</div>
+
+		<script>var showModalById;</script>
+  	  	<script src="js/modals.js"></script>
+  	  	<script src="js/script.js"></script>
+  	</body>
+</html>
+
+
+
